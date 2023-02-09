@@ -1,0 +1,155 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 690607900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on techfios login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3130474300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters username as \"demo@techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo@techfios.com",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDefinitions.user_enters_username_as_(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3133675500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters password as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDefinitions.user_enters_password_as(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3024281200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "User should be able to login with valid credentials from DB",
+        "description": "",
+        "id": "techfios-billing-login-functionality-validation-with-driving-the-data-from-mysql-db;user-should-be-able-to-login-with-valid-credentials-from-db",
+        "after": [
+          {
+            "result": {
+              "duration": 16270308000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4198889100,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 11,
+                "value": "#Given User is on techfios login page"
+              },
+              {
+                "line": 12,
+                "value": "#When User enters \"username\" from techfios database"
+              },
+              {
+                "line": 13,
+                "value": "#When  User enters \"password\" from techfios database"
+              }
+            ],
+            "line": 14,
+            "name": "User click on signin button",
+            "match": {
+              "location": "LoginStepDefinitions.user_click_on_signin_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 160514000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should land on Dashboard page",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_land_on_Dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Scenario1"
+          }
+        ]
+      }
+    ],
+    "name": "Techfios billing login functionality validation with driving the data from MYSQL DB",
+    "description": "",
+    "id": "techfios-billing-login-functionality-validation-with-driving-the-data-from-mysql-db",
+    "keyword": "Feature",
+    "uri": "features/TechFiosLoginFromDB.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@LoginFromDbfeature"
+      },
+      {
+        "line": 1,
+        "name": "@Regression"
+      }
+    ]
+  }
+]
